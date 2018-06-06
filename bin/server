@@ -11,7 +11,7 @@ global.__CLIENT__ = false
 
 if (__DEV__) {
   // Bootstrap babel-register
-  require('babel-register')
+  require('@babel/register')
 
   // Bootstrap webpack (required for webpack-isomorphic-tools)
   require('../webpack.server')

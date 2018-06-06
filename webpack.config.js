@@ -41,8 +41,12 @@ if (__DEV__) {
           test: /\.js$/,
           loader: 'babel-loader',
           query: {
-            presets: ['react', ['es2015', { modules: false }], 'stage-0'],
-            plugins: ['react-hot-loader/babel']
+            presets: ['@babel/preset-flow', '@babel/preset-react', '@babel/preset-es2015',
+              ['@babel/stage-0', {
+                decoratorsLegacy: true
+              }
+              ]],
+            plugins: ['add-module-exports']
           },
           include: path.join(__dirname, 'src')
         },
