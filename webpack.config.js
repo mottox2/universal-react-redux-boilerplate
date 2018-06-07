@@ -41,7 +41,7 @@ if (__DEV__) {
           test: /\.js$/,
           loader: 'babel-loader',
           query: {
-            presets: ['@babel/preset-flow', '@babel/preset-react', '@babel/preset-es2015',
+            presets: ['@babel/preset-flow', '@babel/preset-react', '@babel/typescript', '@babel/preset-es2015',
               ['@babel/stage-0', {
                 decoratorsLegacy: true
               }
